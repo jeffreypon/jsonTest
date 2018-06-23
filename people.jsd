@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DMV Info",
+  "description": "Driver info from DMV",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string"},
+      "phone": {"type": "string"},
+      "emails": {"type": "array", "items": {"type": "string"}},
+      "has_license": {"type": "boolean"},
+      "age": {"type": "number"}
+    },
+    "required": ["name", "phone", "emails", "has_license"]
+  }
+}

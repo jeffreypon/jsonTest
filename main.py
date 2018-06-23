@@ -21,6 +21,9 @@ people_string = '''
 
 data = json.loads(people_string)
 
+with open('people.json', 'w') as g:
+    json.dump(data,g, indent = 2)
+
 print(type(data['people']))
 
 for person in data['people']:
